@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C90AE3CE13A087980016BB65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90AE3CD13A087980016BB65 /* UIKit.framework */; };
+		C90AE3D013A087980016BB65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90AE3CF13A087980016BB65 /* Foundation.framework */; };
+		C90AE3D213A087980016BB65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90AE3D113A087980016BB65 /* CoreGraphics.framework */; };
+		C90AE3D813A087980016BB65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C90AE3D613A087980016BB65 /* InfoPlist.strings */; };
+		C90AE3DB13A087980016BB65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C90AE3DA13A087980016BB65 /* main.m */; };
+		C90AE3DE13A087980016BB65 /* PhysicsEngineAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C90AE3DD13A087980016BB65 /* PhysicsEngineAppDelegate.m */; };
+		C90AE3E213A087980016BB65 /* PhysicsEngineAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = C90AE3E113A087980016BB65 /* PhysicsEngineAppDelegate_iPhone.m */; };
+		C90AE3E513A087980016BB65 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90AE3E313A087980016BB65 /* MainWindow_iPhone.xib */; };
+		C90AE3E913A087980016BB65 /* PhysicsEngineAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = C90AE3E813A087980016BB65 /* PhysicsEngineAppDelegate_iPad.m */; };
+		C90AE3EC13A087980016BB65 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90AE3EA13A087980016BB65 /* MainWindow_iPad.xib */; };
+		C90AE3F313A087990016BB65 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90AE3CD13A087980016BB65 /* UIKit.framework */; };
+		C90AE3F413A087990016BB65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90AE3CF13A087980016BB65 /* Foundation.framework */; };
+		C90AE3F513A087990016BB65 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90AE3D113A087980016BB65 /* CoreGraphics.framework */; };
+		C90AE3FD13A087990016BB65 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C90AE3FB13A087990016BB65 /* InfoPlist.strings */; };
+		C90AE40013A087990016BB65 /* PhysicsEngineTests.h in Resources */ = {isa = PBXBuildFile; fileRef = C90AE3FF13A087990016BB65 /* PhysicsEngineTests.h */; };
+		C90AE40213A087990016BB65 /* PhysicsEngineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C90AE40113A087990016BB65 /* PhysicsEngineTests.m */; };
+		C90AE41713A08A390016BB65 /* GLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = C90AE41513A08A390016BB65 /* GLView.mm */; };
+		C90AE41813A08A390016BB65 /* IRenderingEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = C90AE41613A08A390016BB65 /* IRenderingEngine.mm */; };
+		C90AE42213A08A460016BB65 /* Metrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C90AE41A13A08A450016BB65 /* Metrix.cpp */; };
+		C90AE42313A08A460016BB65 /* Quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C90AE41C13A08A450016BB65 /* Quaternion.cpp */; };
+		C90AE42413A08A460016BB65 /* RenderingEngine1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C90AE41E13A08A450016BB65 /* RenderingEngine1.cpp */; };
+		C90AE42513A08A460016BB65 /* Vectors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C90AE42013A08A460016BB65 /* Vectors.cpp */; };
+		C90AE42813A08AFB0016BB65 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90AE42613A08AFB0016BB65 /* OpenGLES.framework */; };
+		C90AE42913A08AFB0016BB65 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C90AE42713A08AFB0016BB65 /* QuartzCore.framework */; };
+		C90AE43113A095D60016BB65 /* Geometry.hpp in Sources */ = {isa = PBXBuildFile; fileRef = C90AE42F13A095D60016BB65 /* Geometry.hpp */; };
+		C90AE46C13A1C6C50016BB65 /* core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C90AE46913A1C6C50016BB65 /* core.cpp */; };
+		C90AE46F13A1C8710016BB65 /* particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C90AE46D13A1C8700016BB65 /* particle.cpp */; };
+		C9474B6613A30FF9006E9251 /* AmmoRound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9474B6413A30FF9006E9251 /* AmmoRound.cpp */; };
+		C9474B6713A30FF9006E9251 /* AmmoRound.h in Sources */ = {isa = PBXBuildFile; fileRef = C9474B6513A30FF9006E9251 /* AmmoRound.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C90AE3F613A087990016BB65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C90AE3C013A087980016BB65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C90AE3C813A087980016BB65;
+			remoteInfo = PhysicsEngine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C90AE3C913A087980016BB65 /* PhysicsEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhysicsEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90AE3CD13A087980016BB65 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C90AE3CF13A087980016BB65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C90AE3D113A087980016BB65 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C90AE3D513A087980016BB65 /* PhysicsEngine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhysicsEngine-Info.plist"; sourceTree = "<group>"; };
+		C90AE3D713A087980016BB65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C90AE3D913A087980016BB65 /* PhysicsEngine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhysicsEngine-Prefix.pch"; sourceTree = "<group>"; };
+		C90AE3DA13A087980016BB65 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C90AE3DC13A087980016BB65 /* PhysicsEngineAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicsEngineAppDelegate.h; sourceTree = "<group>"; };
+		C90AE3DD13A087980016BB65 /* PhysicsEngineAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhysicsEngineAppDelegate.m; sourceTree = "<group>"; };
+		C90AE3E013A087980016BB65 /* PhysicsEngineAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PhysicsEngineAppDelegate_iPhone.h; path = iPhone/PhysicsEngineAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		C90AE3E113A087980016BB65 /* PhysicsEngineAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PhysicsEngineAppDelegate_iPhone.m; path = iPhone/PhysicsEngineAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		C90AE3E413A087980016BB65 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		C90AE3E713A087980016BB65 /* PhysicsEngineAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PhysicsEngineAppDelegate_iPad.h; path = iPad/PhysicsEngineAppDelegate_iPad.h; sourceTree = "<group>"; };
+		C90AE3E813A087980016BB65 /* PhysicsEngineAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PhysicsEngineAppDelegate_iPad.m; path = iPad/PhysicsEngineAppDelegate_iPad.m; sourceTree = "<group>"; };
+		C90AE3EB13A087980016BB65 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		C90AE3F213A087990016BB65 /* PhysicsEngineTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhysicsEngineTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90AE3FA13A087990016BB65 /* PhysicsEngineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhysicsEngineTests-Info.plist"; sourceTree = "<group>"; };
+		C90AE3FC13A087990016BB65 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C90AE3FE13A087990016BB65 /* PhysicsEngineTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhysicsEngineTests-Prefix.pch"; sourceTree = "<group>"; };
+		C90AE3FF13A087990016BB65 /* PhysicsEngineTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicsEngineTests.h; sourceTree = "<group>"; };
+		C90AE40113A087990016BB65 /* PhysicsEngineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhysicsEngineTests.m; sourceTree = "<group>"; };
+		C90AE41413A08A390016BB65 /* GLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
+		C90AE41513A08A390016BB65 /* GLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GLView.mm; sourceTree = "<group>"; };
+		C90AE41613A08A390016BB65 /* IRenderingEngine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IRenderingEngine.mm; sourceTree = "<group>"; };
+		C90AE41913A08A450016BB65 /* IRenderingEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRenderingEngine.h; sourceTree = "<group>"; };
+		C90AE41A13A08A450016BB65 /* Metrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Metrix.cpp; sourceTree = "<group>"; };
+		C90AE41B13A08A450016BB65 /* Metrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Metrix.h; sourceTree = "<group>"; };
+		C90AE41C13A08A450016BB65 /* Quaternion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Quaternion.cpp; sourceTree = "<group>"; };
+		C90AE41D13A08A450016BB65 /* Quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quaternion.h; sourceTree = "<group>"; };
+		C90AE41E13A08A450016BB65 /* RenderingEngine1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RenderingEngine1.cpp; sourceTree = "<group>"; };
+		C90AE41F13A08A450016BB65 /* RenderingEngine1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderingEngine1.h; sourceTree = "<group>"; };
+		C90AE42013A08A460016BB65 /* Vectors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vectors.cpp; sourceTree = "<group>"; };
+		C90AE42113A08A460016BB65 /* Vectors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vectors.h; sourceTree = "<group>"; };
+		C90AE42613A08AFB0016BB65 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C90AE42713A08AFB0016BB65 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C90AE42A13A08B020016BB65 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C90AE42F13A095D60016BB65 /* Geometry.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Geometry.hpp; sourceTree = "<group>"; };
+		C90AE43013A095D60016BB65 /* Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
+		C90AE46913A1C6C50016BB65 /* core.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = core.cpp; sourceTree = "<group>"; };
+		C90AE46A13A1C6C50016BB65 /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
+		C90AE46B13A1C6C50016BB65 /* precision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = precision.h; sourceTree = "<group>"; };
+		C90AE46D13A1C8700016BB65 /* particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = particle.cpp; sourceTree = "<group>"; };
+		C90AE46E13A1C8710016BB65 /* particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = particle.h; sourceTree = "<group>"; };
+		C9474B6413A30FF9006E9251 /* AmmoRound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AmmoRound.cpp; sourceTree = "<group>"; };
+		C9474B6513A30FF9006E9251 /* AmmoRound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = AmmoRound.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C90AE3C613A087980016BB65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90AE3D213A087980016BB65 /* CoreGraphics.framework in Frameworks */,
+				C90AE42813A08AFB0016BB65 /* OpenGLES.framework in Frameworks */,
+				C90AE42913A08AFB0016BB65 /* QuartzCore.framework in Frameworks */,
+				C90AE3CE13A087980016BB65 /* UIKit.framework in Frameworks */,
+				C90AE3D013A087980016BB65 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90AE3EE13A087990016BB65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90AE3F313A087990016BB65 /* UIKit.framework in Frameworks */,
+				C90AE3F413A087990016BB65 /* Foundation.framework in Frameworks */,
+				C90AE3F513A087990016BB65 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C90AE3BE13A087980016BB65 = {
+			isa = PBXGroup;
+			children = (
+				C90AE3D313A087980016BB65 /* PhysicsEngine */,
+				C90AE3F813A087990016BB65 /* PhysicsEngineTests */,
+				C90AE3CC13A087980016BB65 /* Frameworks */,
+				C90AE3CA13A087980016BB65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C90AE3CA13A087980016BB65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C90AE3C913A087980016BB65 /* PhysicsEngine.app */,
+				C90AE3F213A087990016BB65 /* PhysicsEngineTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C90AE3CC13A087980016BB65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C90AE42A13A08B020016BB65 /* CoreGraphics.framework */,
+				C90AE42613A08AFB0016BB65 /* OpenGLES.framework */,
+				C90AE42713A08AFB0016BB65 /* QuartzCore.framework */,
+				C90AE3CD13A087980016BB65 /* UIKit.framework */,
+				C90AE3CF13A087980016BB65 /* Foundation.framework */,
+				C90AE3D113A087980016BB65 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C90AE3D313A087980016BB65 /* PhysicsEngine */ = {
+			isa = PBXGroup;
+			children = (
+				C90AE44213A12F930016BB65 /* Engine */,
+				C90AE42C13A08BD10016BB65 /* Utilities */,
+				C90AE42B13A08BCC0016BB65 /* RenderingEngine */,
+				C90AE42D13A08C050016BB65 /* OpenGL View */,
+				C90AE3DC13A087980016BB65 /* PhysicsEngineAppDelegate.h */,
+				C90AE3DD13A087980016BB65 /* PhysicsEngineAppDelegate.m */,
+				C90AE42E13A08C400016BB65 /* Extras */,
+			);
+			path = PhysicsEngine;
+			sourceTree = "<group>";
+		};
+		C90AE3D413A087980016BB65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C90AE3D513A087980016BB65 /* PhysicsEngine-Info.plist */,
+				C90AE3D613A087980016BB65 /* InfoPlist.strings */,
+				C90AE3D913A087980016BB65 /* PhysicsEngine-Prefix.pch */,
+				C90AE3DA13A087980016BB65 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C90AE3DF13A087980016BB65 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				C90AE3E013A087980016BB65 /* PhysicsEngineAppDelegate_iPhone.h */,
+				C90AE3E113A087980016BB65 /* PhysicsEngineAppDelegate_iPhone.m */,
+				C90AE3E313A087980016BB65 /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		C90AE3E613A087980016BB65 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				C90AE3E713A087980016BB65 /* PhysicsEngineAppDelegate_iPad.h */,
+				C90AE3E813A087980016BB65 /* PhysicsEngineAppDelegate_iPad.m */,
+				C90AE3EA13A087980016BB65 /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		C90AE3F813A087990016BB65 /* PhysicsEngineTests */ = {
+			isa = PBXGroup;
+			children = (
+				C90AE3FF13A087990016BB65 /* PhysicsEngineTests.h */,
+				C90AE40113A087990016BB65 /* PhysicsEngineTests.m */,
+				C90AE3F913A087990016BB65 /* Supporting Files */,
+			);
+			path = PhysicsEngineTests;
+			sourceTree = "<group>";
+		};
+		C90AE3F913A087990016BB65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C90AE3FA13A087990016BB65 /* PhysicsEngineTests-Info.plist */,
+				C90AE3FB13A087990016BB65 /* InfoPlist.strings */,
+				C90AE3FE13A087990016BB65 /* PhysicsEngineTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C90AE42B13A08BCC0016BB65 /* RenderingEngine */ = {
+			isa = PBXGroup;
+			children = (
+				C90AE41913A08A450016BB65 /* IRenderingEngine.h */,
+				C90AE41613A08A390016BB65 /* IRenderingEngine.mm */,
+				C90AE41F13A08A450016BB65 /* RenderingEngine1.h */,
+				C90AE41E13A08A450016BB65 /* RenderingEngine1.cpp */,
+				C90AE42F13A095D60016BB65 /* Geometry.hpp */,
+				C90AE43013A095D60016BB65 /* Geometry.h */,
+			);
+			name = RenderingEngine;
+			sourceTree = "<group>";
+		};
+		C90AE42C13A08BD10016BB65 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C90AE41A13A08A450016BB65 /* Metrix.cpp */,
+				C90AE41B13A08A450016BB65 /* Metrix.h */,
+				C90AE41C13A08A450016BB65 /* Quaternion.cpp */,
+				C90AE41D13A08A450016BB65 /* Quaternion.h */,
+				C90AE42013A08A460016BB65 /* Vectors.cpp */,
+				C90AE42113A08A460016BB65 /* Vectors.h */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		C90AE42D13A08C050016BB65 /* OpenGL View */ = {
+			isa = PBXGroup;
+			children = (
+				C90AE41413A08A390016BB65 /* GLView.h */,
+				C90AE41513A08A390016BB65 /* GLView.mm */,
+			);
+			name = "OpenGL View";
+			sourceTree = "<group>";
+		};
+		C90AE42E13A08C400016BB65 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				C90AE3DF13A087980016BB65 /* iPhone */,
+				C90AE3E613A087980016BB65 /* iPad */,
+				C90AE3D413A087980016BB65 /* Supporting Files */,
+			);
+			name = Extras;
+			sourceTree = "<group>";
+		};
+		C90AE44213A12F930016BB65 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				C9474B6413A30FF9006E9251 /* AmmoRound.cpp */,
+				C9474B6513A30FF9006E9251 /* AmmoRound.h */,
+				C90AE46813A1C6C50016BB65 /* Cyclone */,
+			);
+			name = Engine;
+			sourceTree = "<group>";
+		};
+		C90AE46813A1C6C50016BB65 /* Cyclone */ = {
+			isa = PBXGroup;
+			children = (
+				C90AE46B13A1C6C50016BB65 /* precision.h */,
+				C90AE46A13A1C6C50016BB65 /* core.h */,
+				C90AE46913A1C6C50016BB65 /* core.cpp */,
+				C90AE46E13A1C8710016BB65 /* particle.h */,
+				C90AE46D13A1C8700016BB65 /* particle.cpp */,
+			);
+			path = Cyclone;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C90AE3C813A087980016BB65 /* PhysicsEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90AE40513A087990016BB65 /* Build configuration list for PBXNativeTarget "PhysicsEngine" */;
+			buildPhases = (
+				C90AE3C513A087980016BB65 /* Sources */,
+				C90AE3C613A087980016BB65 /* Frameworks */,
+				C90AE3C713A087980016BB65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhysicsEngine;
+			productName = PhysicsEngine;
+			productReference = C90AE3C913A087980016BB65 /* PhysicsEngine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C90AE3F113A087990016BB65 /* PhysicsEngineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90AE40813A087990016BB65 /* Build configuration list for PBXNativeTarget "PhysicsEngineTests" */;
+			buildPhases = (
+				C90AE3ED13A087990016BB65 /* Sources */,
+				C90AE3EE13A087990016BB65 /* Frameworks */,
+				C90AE3EF13A087990016BB65 /* Resources */,
+				C90AE3F013A087990016BB65 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C90AE3F713A087990016BB65 /* PBXTargetDependency */,
+			);
+			name = PhysicsEngineTests;
+			productName = PhysicsEngineTests;
+			productReference = C90AE3F213A087990016BB65 /* PhysicsEngineTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C90AE3C013A087980016BB65 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C90AE3C313A087980016BB65 /* Build configuration list for PBXProject "PhysicsEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C90AE3BE13A087980016BB65;
+			productRefGroup = C90AE3CA13A087980016BB65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C90AE3C813A087980016BB65 /* PhysicsEngine */,
+				C90AE3F113A087990016BB65 /* PhysicsEngineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C90AE3C713A087980016BB65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90AE3D813A087980016BB65 /* InfoPlist.strings in Resources */,
+				C90AE3E513A087980016BB65 /* MainWindow_iPhone.xib in Resources */,
+				C90AE3EC13A087980016BB65 /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90AE3EF13A087990016BB65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90AE3FD13A087990016BB65 /* InfoPlist.strings in Resources */,
+				C90AE40013A087990016BB65 /* PhysicsEngineTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C90AE3F013A087990016BB65 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C90AE3C513A087980016BB65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90AE3DB13A087980016BB65 /* main.m in Sources */,
+				C90AE3DE13A087980016BB65 /* PhysicsEngineAppDelegate.m in Sources */,
+				C90AE3E213A087980016BB65 /* PhysicsEngineAppDelegate_iPhone.m in Sources */,
+				C90AE3E913A087980016BB65 /* PhysicsEngineAppDelegate_iPad.m in Sources */,
+				C90AE41713A08A390016BB65 /* GLView.mm in Sources */,
+				C90AE41813A08A390016BB65 /* IRenderingEngine.mm in Sources */,
+				C90AE42213A08A460016BB65 /* Metrix.cpp in Sources */,
+				C90AE42313A08A460016BB65 /* Quaternion.cpp in Sources */,
+				C90AE42413A08A460016BB65 /* RenderingEngine1.cpp in Sources */,
+				C90AE42513A08A460016BB65 /* Vectors.cpp in Sources */,
+				C90AE43113A095D60016BB65 /* Geometry.hpp in Sources */,
+				C90AE46C13A1C6C50016BB65 /* core.cpp in Sources */,
+				C90AE46F13A1C8710016BB65 /* particle.cpp in Sources */,
+				C9474B6613A30FF9006E9251 /* AmmoRound.cpp in Sources */,
+				C9474B6713A30FF9006E9251 /* AmmoRound.h in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C90AE3ED13A087990016BB65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90AE40213A087990016BB65 /* PhysicsEngineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C90AE3F713A087990016BB65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C90AE3C813A087980016BB65 /* PhysicsEngine */;
+			targetProxy = C90AE3F613A087990016BB65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C90AE3D613A087980016BB65 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90AE3D713A087980016BB65 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C90AE3E313A087980016BB65 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90AE3E413A087980016BB65 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		C90AE3EA13A087980016BB65 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90AE3EB13A087980016BB65 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		C90AE3FB13A087990016BB65 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90AE3FC13A087990016BB65 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C90AE40313A087990016BB65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C90AE40413A087990016BB65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C90AE40613A087990016BB65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhysicsEngine/PhysicsEngine-Prefix.pch";
+				INFOPLIST_FILE = "PhysicsEngine/PhysicsEngine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C90AE40713A087990016BB65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhysicsEngine/PhysicsEngine-Prefix.pch";
+				INFOPLIST_FILE = "PhysicsEngine/PhysicsEngine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C90AE40913A087990016BB65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PhysicsEngine.app/PhysicsEngine";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhysicsEngineTests/PhysicsEngineTests-Prefix.pch";
+				INFOPLIST_FILE = "PhysicsEngineTests/PhysicsEngineTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C90AE40A13A087990016BB65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PhysicsEngine.app/PhysicsEngine";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhysicsEngineTests/PhysicsEngineTests-Prefix.pch";
+				INFOPLIST_FILE = "PhysicsEngineTests/PhysicsEngineTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C90AE3C313A087980016BB65 /* Build configuration list for PBXProject "PhysicsEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90AE40313A087990016BB65 /* Debug */,
+				C90AE40413A087990016BB65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90AE40513A087990016BB65 /* Build configuration list for PBXNativeTarget "PhysicsEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90AE40613A087990016BB65 /* Debug */,
+				C90AE40713A087990016BB65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90AE40813A087990016BB65 /* Build configuration list for PBXNativeTarget "PhysicsEngineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90AE40913A087990016BB65 /* Debug */,
+				C90AE40A13A087990016BB65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C90AE3C013A087980016BB65 /* Project object */;
+}
